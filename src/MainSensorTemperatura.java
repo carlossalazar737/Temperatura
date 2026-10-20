@@ -6,7 +6,7 @@ public class MainSensorTemperatura {
 
         S1.setIdSensor("SENS-001");
         S1.setValorActual(23.5);
-        S1.setUnidad("c");   // se guarda como "C"
+        S1.setUnidad("c");
 
         S2.setIdSensor("SENS-002");
         S2.setValorActual(74.3);
@@ -14,13 +14,13 @@ public class MainSensorTemperatura {
 
         S3.setIdSensor("SENS-003");
         S3.setValorActual(18);
-        S3.setUnidad("K");   // inválida: no se guarda
+        S3.setUnidad("K");
 
         S1.mostrarlectura();
         S2.mostrarlectura();
-        S3.mostrarlectura(); // la unidad saldrá como null
+        S3.mostrarlectura();
 
-        S3.setUnidad("c");   // ahora sí es válida
+        S3.setUnidad("c");
         S3.mostrarlectura();
     }
 }
